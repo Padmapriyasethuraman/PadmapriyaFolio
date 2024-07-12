@@ -1,0 +1,82 @@
+title: Padmapriya's Portfolio
+description: >-
+  This is Padmapriya's personal portfolio website.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://<your-username>.github.io" # the base hostname & protocol for your site
+
+plugins:
+  - jekyll-seo-tag
+
+markdown: kramdown
+highlighter: rouge
+
+theme: minima
+
+# Build settings
+permalink: pretty
+
+# Author information
+author:
+  name: Padmapriya
+  email: padmapriyasethu2003@gmail.com
+
+# Social media links
+social:
+  twitter: https://x.com/padhmapriya_s
+  github: https://github.com/Padmapriyasethuraman
+  linkedin: https://www.linkedin.com/in/padmapriya-sethuraman
+
+# Navigation links
+nav:
+  - title: "About"
+    url: "#about"
+  - title: "Education"
+    url: "#education"
+  - title: "Skills"
+    url: "#skills"
+  - title: "Projects"
+    url: "#projects"
+  - title: "Certifications"
+    url: "#certifications"
+  - title: "Contact"
+    url: "#contact"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
+  - .github
+
+# Include these files in the site
+include:
+  - _pages
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Padmapriya"
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-feed
+
+# Custom configurations
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
